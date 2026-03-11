@@ -12,5 +12,5 @@
 #include "LIB_Math.h"
 #include "Adder.h"
 #include "Global.h"
-
+#include <jni.h>
 #endif //PCH_H
