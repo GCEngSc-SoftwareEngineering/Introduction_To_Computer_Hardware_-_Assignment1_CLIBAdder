@@ -21,7 +21,7 @@
 	void* CLIBAdder::LIB_Math::generate_Program()
 	{
 		stat_CLASS_create_Adder();
-		return stat_CLASS_get_Adder();
+		return (void*)stat_CLASS_get_Adder();
 	}
 		// get.
 	float CLIBAdder::LIB_Math::get_Input_Subset_parise0_valueA(CLIBAdder::Adder* obj)
