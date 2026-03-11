@@ -1,7 +1,7 @@
 # Introduction_To_Computer_Hardware.
 
 ## ToDo:
-- JNI value mangling between jaca and c++.
+- JNI value mangling between java and c++.
 https://www.google.com/search?q=how+to+convert+c%2B%2B+float+to+java+float&rlz=1C1HKFL_enAU1205&oq=how+to+convert+c%2B%2B+float+to+java+float&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRhB0gEIMTAwOGowajmoAgCwAgA&sourceid=chrome&ie=UTF-8
 
 ## Using.
