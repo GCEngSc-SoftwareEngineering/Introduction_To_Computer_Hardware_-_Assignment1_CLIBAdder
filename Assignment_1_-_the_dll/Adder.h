@@ -16,15 +16,15 @@ namespace CLIBAdder
 		double do_Add(void* obj);
 		// crate.
 		// initialise.
-		void dyn_initialise_Input_Subset_parise0_valueA(void* obj, float newINITIALISED_value);
-		void dyn_initialise_Input_Subset_parise0_valueB(void* obj, float newINITIALISED_value);
-		void dyn_initialise_Output_Subset_parise0_value(void* obj, double newINITIALISED_value);
+		void dyn_initialise_Input_Subset_praise0_valueA(void* obj, float newINITIALISED_value);
+		void dyn_initialise_Input_Subset_praise0_valueB(void* obj, float newINITIALISED_value);
+		void dyn_initialise_Output_Subset_praise0_value(void* obj, double newINITIALISED_value);
 		// get.
-		float dyn_REG_get_Input_Subset_parise0_valueA(void* obj);
-		float dyn_REG_get_Input_Subset_parise0_valueB(void* obj);
+		float dyn_REG_get_Input_Subset_praise0_valueA(void* obj);
+		float dyn_REG_get_Input_Subset_praise0_valueB(void* obj);
 			// set.
-		void dyn_REG_set_Input_Subset_parise0_valueA(void* obj, float newValue);
-		void dyn_REG_set_Input_Subset_parise0_valueB(void* obj, float newValue);
+		void dyn_REG_set_Input_Subset_praise0_valueA(void* obj, float newValue);
+		void dyn_REG_set_Input_Subset_praise0_valueB(void* obj, float newValue);
 // private.
 	private:
 	// static.
@@ -41,12 +41,12 @@ namespace CLIBAdder
 		static void stat_REG_create_ptr_Input_valueB();
 		static void stat_REG_create_ptr_Output_value();
 		// get.
-		static float stat_REG_get_Input_Subset_parise0_valueA();
-		static float stat_REG_get_Input_Subset_parise0_valueB();
-		static double stat_REG_get_Output_Subset_parise0_value();
+		static float stat_REG_get_Input_Subset_praise0_valueA();
+		static float stat_REG_get_Input_Subset_praise0_valueB();
+		static double stat_REG_get_Output_Subset_praise0_value();
 		// set.
-		static void stat_REG_set_Input_Subset_parise0_valueA(float newValue);
-		static void stat_REG_set_Input_Subset_parise0_valueB(float newValue);
-		static void stat_REG_set_Output_Subset_parise0_value(double newValue);
+		static void stat_REG_set_Input_Subset_praise0_valueA(float newValue);
+		static void stat_REG_set_Input_Subset_praise0_valueB(float newValue);
+		static void stat_REG_set_Output_Subset_praise0_value(double newValue);
 	};
 }

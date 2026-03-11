@@ -24,8 +24,8 @@ extern "C" {
 			static void* generate_Program();
 		// get.
 			static class Adder* get_CLASS_Adder();
-			static float get_Input_Subset_parise0_valueA(void* obj);
-			static float get_Input_Subset_parise0_valueB(void* obj);
+			static float get_Input_Subset_praise0_valueA(void* obj);
+			static float get_Input_Subset_praise0_valueB(void* obj);
 		// set.
 			static void set_Input_Subset_praise0_valueA(void* obj, float newValue);
 			static void set_Input_Subset_praise0_valueB(void* obj, float newValue);

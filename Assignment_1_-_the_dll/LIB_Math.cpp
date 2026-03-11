@@ -24,22 +24,22 @@
 		return (void*)stat_CLASS_get_Framework();
 	}
 	// get.
-	float CLIBAdder::LIB_Math::get_Input_Subset_parise0_valueA(void* obj)
+	float CLIBAdder::LIB_Math::get_Input_Subset_praise0_valueA(void* obj)
 	{
-		return CLIBAdder::Global::obj_getClassOf(obj)->get_CLASS_Adder()->dyn_REG_get_Input_Subset_parise0_valueA(CLIBAdder::Global::obj_getClassOf(obj));
+		return CLIBAdder::Global::obj_getClassOf(obj)->get_CLASS_Adder()->dyn_REG_get_Input_Subset_praise0_valueA(CLIBAdder::Global::obj_getClassOf(obj));
 	}
-	float CLIBAdder::LIB_Math::get_Input_Subset_parise0_valueB(void* obj)
+	float CLIBAdder::LIB_Math::get_Input_Subset_praise0_valueB(void* obj)
 	{
-		return CLIBAdder::Global::obj_getClassOf(obj)->get_CLASS_Adder()->dyn_REG_get_Input_Subset_parise0_valueB(CLIBAdder::Global::obj_getClassOf(obj));
+		return CLIBAdder::Global::obj_getClassOf(obj)->get_CLASS_Adder()->dyn_REG_get_Input_Subset_praise0_valueB(CLIBAdder::Global::obj_getClassOf(obj));
 	}
 		// set.
 	void CLIBAdder::LIB_Math::set_Input_Subset_praise0_valueA(void* obj, float newValue)
 	{
-		CLIBAdder::Global::obj_getClassOf(obj)->get_CLASS_Adder()->dyn_REG_set_Input_Subset_parise0_valueA(CLIBAdder::Global::obj_getClassOf(obj), newValue);
+		CLIBAdder::Global::obj_getClassOf(obj)->get_CLASS_Adder()->dyn_REG_set_Input_Subset_praise0_valueA(CLIBAdder::Global::obj_getClassOf(obj), newValue);
 	}
 	void CLIBAdder::LIB_Math::set_Input_Subset_praise0_valueB(void* obj, float newValue)
 	{
-		CLIBAdder::Global::obj_getClassOf(obj)->get_CLASS_Adder()->dyn_REG_set_Input_Subset_parise0_valueB(CLIBAdder::Global::obj_getClassOf(obj), newValue);
+		CLIBAdder::Global::obj_getClassOf(obj)->get_CLASS_Adder()->dyn_REG_set_Input_Subset_praise0_valueB(CLIBAdder::Global::obj_getClassOf(obj), newValue);
 	}
 
 
