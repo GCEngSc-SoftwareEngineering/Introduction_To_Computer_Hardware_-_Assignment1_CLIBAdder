@@ -15,7 +15,7 @@ namespace CLIBAdder
 	// constructor.
 		LIB_Math();
 	// dynamic
-		static double do_Add(class Adder* obj, float valueA, float valueB);
+		static double do_Add(class Adder* obj);
 		// crate.
 		static void* generate_Program();
 		// get.

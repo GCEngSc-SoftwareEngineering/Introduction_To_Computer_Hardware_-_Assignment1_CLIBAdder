@@ -17,20 +17,21 @@
 		stat_REG_create_ptr_Output_value();
 	}
 		// dynamic
-	double CLIBAdder::Adder::do_Add(float valueA, float valueB)
+	double CLIBAdder::Adder::do_Add()
 	{
-		stat_REG_set_Output_Subset_parise0_value((double)*stat_REG_get_Input_Subset_parise0_valueA() + (double)*stat_REG_get_Input_Subset_parise0_valueB());
-		return *stat_REG_get_Output_Subset_parise0_value();
+		double ans = (double)stat_REG_get_Input_Subset_parise0_valueA() + (double)stat_REG_get_Input_Subset_parise0_valueB();
+		stat_REG_set_Output_Subset_parise0_value(ans);
+		return stat_REG_get_Output_Subset_parise0_value();
 	}
 			// crate.
 			// get.
-	double CLIBAdder::Adder::dyn_REG_get_Input_Subset_parise0_valueA()
+	float CLIBAdder::Adder::dyn_REG_get_Input_Subset_parise0_valueA()
 	{
-		return *stat_REG_get_Input_Subset_parise0_valueB();
+		return stat_REG_get_Input_Subset_parise0_valueB();
 	}
-	double CLIBAdder::Adder::dyn_REG_get_Input_Subset_parise0_valueB()
+	float CLIBAdder::Adder::dyn_REG_get_Input_Subset_parise0_valueB()
 	{
-		return *stat_REG_get_Input_Subset_parise0_valueB();
+		return stat_REG_get_Input_Subset_parise0_valueB();
 	}
 			// set.
 	void CLIBAdder::Adder::dyn_REG_set_Input_Subset_parise0_valueA(float newValue)
@@ -65,17 +66,17 @@
 		while (stat_REG_get_Output_Subset_parise0_value() == NULL) {}
 	}
 			// get.
-	float* CLIBAdder::Adder::stat_REG_get_Input_Subset_parise0_valueA()
+	float CLIBAdder::Adder::stat_REG_get_Input_Subset_parise0_valueA()
 	{
-		return _ptr_Input_valueA;
+		return *_ptr_Input_valueA;
 	}
-	float* CLIBAdder::Adder::stat_REG_get_Input_Subset_parise0_valueB()
+	float CLIBAdder::Adder::stat_REG_get_Input_Subset_parise0_valueB()
 	{
-		return _ptr_Input_valueB;
+		return *_ptr_Input_valueB;
 	}
-	double* CLIBAdder::Adder::stat_REG_get_Output_Subset_parise0_value()
+	double CLIBAdder::Adder::stat_REG_get_Output_Subset_parise0_value()
 	{
-		return _ptr_Output_value;
+		return *_ptr_Output_value;
 	}
 		// set.
 	void CLIBAdder::Adder::stat_REG_set_Input_Subset_parise0_valueA(float newValue)

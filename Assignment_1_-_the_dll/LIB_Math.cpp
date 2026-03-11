@@ -13,9 +13,9 @@
 		stat_CLASS_create_Adder();
 	}
 	// dynamic
-	double CLIBAdder::LIB_Math::do_Add(CLIBAdder::Adder* obj, float valueA, float valueB)
+	double CLIBAdder::LIB_Math::do_Add(CLIBAdder::Adder* obj)
 	{
-		return obj->do_Add(valueA, valueB);
+		return obj->do_Add();
 	}
 		// crate.
 	void* CLIBAdder::LIB_Math::generate_Program()
