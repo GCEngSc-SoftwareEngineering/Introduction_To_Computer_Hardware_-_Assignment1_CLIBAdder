@@ -15,8 +15,8 @@ namespace CLIBAdder
 		double dyn_REG_get_Input_Subset_parise0_valueA();
 		double dyn_REG_get_Input_Subset_parise0_valueB();
 			// set.
-		void dyn_REG_set_Input_Subset_parise0_valueA(float* newValue);
-		void dyn_REG_set_Input_Subset_parise0_valueB(float* newValue);
+		void dyn_REG_set_Input_Subset_parise0_valueA(float newValue);
+		void dyn_REG_set_Input_Subset_parise0_valueB(float newValue);
 // private.
 	private:
 	// static.

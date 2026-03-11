@@ -33,13 +33,13 @@
 		return *stat_REG_get_Input_Subset_parise0_valueB();
 	}
 			// set.
-	void CLIBAdder::Adder::dyn_REG_set_Input_Subset_parise0_valueA(float* newValue)
+	void CLIBAdder::Adder::dyn_REG_set_Input_Subset_parise0_valueA(float newValue)
 	{
-		stat_REG_set_Input_Subset_parise0_valueA(*newValue);
+		stat_REG_set_Input_Subset_parise0_valueA(newValue);
 	}
-	void CLIBAdder::Adder::dyn_REG_set_Input_Subset_parise0_valueB(float* newValue)
+	void CLIBAdder::Adder::dyn_REG_set_Input_Subset_parise0_valueB(float newValue)
 	{
-		stat_REG_set_Input_Subset_parise0_valueB(*newValue);
+		stat_REG_set_Input_Subset_parise0_valueB(newValue);
 	}
 // private.
 	// static.

@@ -33,11 +33,11 @@
 		return obj->dyn_REG_get_Input_Subset_parise0_valueB();
 	}
 		// set.
-	void CLIBAdder::LIB_Math::reg_set_Input_Subset_parise0_valueA(CLIBAdder::Adder* obj, float* newValue)
+	void CLIBAdder::LIB_Math::reg_set_Input_Subset_parise0_valueA(CLIBAdder::Adder* obj, float newValue)
 	{
 		obj->dyn_REG_set_Input_Subset_parise0_valueA(newValue);
 	}
-	void CLIBAdder::LIB_Math::reg_set_Input_Subset_parise0_valueB(CLIBAdder::Adder* obj, float* newValue)
+	void CLIBAdder::LIB_Math::reg_set_Input_Subset_parise0_valueB(CLIBAdder::Adder* obj, float newValue)
 	{
 		obj->dyn_REG_set_Input_Subset_parise0_valueB(newValue);
 	}
