@@ -23,5 +23,14 @@ Build id: 20251204-0850
 ### Apache Maven. 
  - https://maven.apache.org/install.html
  
-### Java Native Access Library
+### Java Native Access Library.
  - https://github.com/java-native-access/jna
+
+ #### edit pom.xml.
+````
+    <dependency>
+    	<groupId>net.java.dev.jna</groupId>
+    	<artifactId>jna</artifactId>
+    	<version>5.18.1</version> <!-- Check for newest 2026 version -->
+    </dependency>
+````
