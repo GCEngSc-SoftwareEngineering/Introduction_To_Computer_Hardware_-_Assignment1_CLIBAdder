@@ -10,35 +10,36 @@
 	// constructor.
 	CLIBAdder::LIB_Math::LIB_Math()
 	{
-
+		stat_CLASS_create_Adder();
 	}
 	// dynamic
+	double CLIBAdder::LIB_Math::do_Add(CLIBAdder::Adder* obj, float valueA, float valueB)
+	{
+		return obj->do_Add(valueA, valueB);
+	}
 		// crate.
 	void* CLIBAdder::LIB_Math::generate_Program()
 	{
 		stat_CLASS_create_Adder();
 		return nullptr;
 	}
-
 		// get.
-	double* CLIBAdder::LIB_Math::reg_get_Input_Subset_parise0_valueA()
+	float CLIBAdder::LIB_Math::reg_get_Input_Subset_parise0_valueA(CLIBAdder::Adder* obj)
 	{
-		return stat_REG_get_Input_Subset_parise0_valueB();
+		return obj->dyn_REG_get_Input_Subset_parise0_valueA();
 	}
-
-	double* CLIBAdder::LIB_Math::reg_get_Input_Subset_parise0_valueB()
+	float CLIBAdder::LIB_Math::reg_get_Input_Subset_parise0_valueB(CLIBAdder::Adder* obj)
 	{
-		return stat_REG_get_Input_Subset_parise0_valueB();
+		return obj->dyn_REG_get_Input_Subset_parise0_valueB();
 	}
 		// set.
-	void CLIBAdder::LIB_Math::reg_set_Input_Subset_parise0_valueA(double* newValue)
+	void CLIBAdder::LIB_Math::reg_set_Input_Subset_parise0_valueA(CLIBAdder::Adder* obj, float* newValue)
 	{
-		stat_REG_set_Input_Subset_parise0_valueA(newValue);
+		obj->dyn_REG_set_Input_Subset_parise0_valueA(newValue);
 	}
-
-	void CLIBAdder::LIB_Math::reg_set_Input_Subset_parise0_valueB(double* newValue)
+	void CLIBAdder::LIB_Math::reg_set_Input_Subset_parise0_valueB(CLIBAdder::Adder* obj, float* newValue)
 	{
-		stat_REG_set_Input_Subset_parise0_valueB(newValue);
+		obj->dyn_REG_set_Input_Subset_parise0_valueB(newValue);
 	}
 // private.
 	// static.
@@ -58,20 +59,4 @@
 		// registers.
 			// create.
 			// get.
-	double* CLIBAdder::LIB_Math::stat_REG_get_Input_Subset_parise0_valueA()
-	{
-		return;
-	}
-	double* CLIBAdder::LIB_Math::stat_REG_get_Input_Subset_parise0_valueB()
-	{
-		return;
-	}
 			// set.
-	void CLIBAdder::LIB_Math::stat_REG_set_Input_Subset_parise0_valueA(double* newValue)
-	{
-
-	}
-	void CLIBAdder::LIB_Math::stat_REG_set_Input_Subset_parise0_valueB(double* newValue)
-	{
-
-	}

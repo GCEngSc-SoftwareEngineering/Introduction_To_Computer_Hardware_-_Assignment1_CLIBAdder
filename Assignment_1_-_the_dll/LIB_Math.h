@@ -15,14 +15,15 @@ namespace CLIBAdder
 	// constructor.
 		LIB_Math();
 	// dynamic
+		static double do_Add(class Adder* obj, float valueA, float valueB);
 		// crate.
 		static void* generate_Program();
 		// get.
-		static double* reg_get_Input_Subset_parise0_valueA();
-		static double* reg_get_Input_Subset_parise0_valueB();
+		static float reg_get_Input_Subset_parise0_valueA(class Adder* obj);
+		static float reg_get_Input_Subset_parise0_valueB(class Adder* obj);
 		// set.
-		static void reg_set_Input_Subset_parise0_valueA(double* newValue);
-		static void reg_set_Input_Subset_parise0_valueB(double* newValue);
+		static void reg_set_Input_Subset_parise0_valueA(class Adder* obj, float* newValue);
+		static void reg_set_Input_Subset_parise0_valueB(class Adder* obj, float* newValue);
 // private.
 	private:
 	// static.
@@ -35,10 +36,6 @@ namespace CLIBAdder
 		// registers.
 			// create.
 			// get.
-		static double* stat_REG_get_Input_Subset_parise0_valueA();
-		static double* stat_REG_get_Input_Subset_parise0_valueB();
 			// set.
-		static void stat_REG_set_Input_Subset_parise0_valueA(double* newValue);
-		static void stat_REG_set_Input_Subset_parise0_valueB(double* newValue);
 	};
 }
