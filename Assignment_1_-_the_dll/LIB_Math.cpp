@@ -3,63 +3,62 @@
 
 // pointers.
 	// classes.
-	CLIBAdder::Adder* _stat_CLASS_Adder = NULL;
+	CLIBAdder::Framework* _CLASS_framework = NULL;
 	// registers.
 
 // public.
 	// constructor.
 	CLIBAdder::LIB_Math::LIB_Math()
 	{
-		stat_CLASS_create_Adder();
 	}
 	// dynamic
-	double CLIBAdder::LIB_Math::do_Add(CLIBAdder::Adder* obj)
+	double CLIBAdder::LIB_Math::do_Add(CLIBAdder::Framework* obj)
 	{
-		return obj->do_Add();
+		return obj->get_CLASS_Adder()->do_Add(obj);
 	}
 		// crate.
 	void* CLIBAdder::LIB_Math::generate_Program()
 	{
-		stat_CLASS_create_Adder();
-		stat_CLASS_get_Adder()->dyn_initialise_Input_Subset_parise0_valueA((float)0.0);
-		stat_CLASS_get_Adder()->dyn_initialise_Input_Subset_parise0_valueB((float)0.0);
-		stat_CLASS_get_Adder()->dyn_initialise_Output_Subset_parise0_value((double)0.0);
-		return (void*)stat_CLASS_get_Adder();
+		stat_CLASS_create_Framework();
+		stat_CLASS_get_Framework()->initialise(stat_CLASS_get_Framework());
+		return (void*)stat_CLASS_get_Framework();
 	}
-		// get.
-	float CLIBAdder::LIB_Math::get_Input_Subset_parise0_valueA(CLIBAdder::Adder* obj)
+	// get.
+	float CLIBAdder::LIB_Math::get_Input_Subset_parise0_valueA(CLIBAdder::Framework* obj)
 	{
-		return obj->dyn_REG_get_Input_Subset_parise0_valueA();
+		return obj->get_CLASS_Adder()->dyn_REG_get_Input_Subset_parise0_valueA(obj);
 	}
-	float CLIBAdder::LIB_Math::get_Input_Subset_parise0_valueB(CLIBAdder::Adder* obj)
+	float CLIBAdder::LIB_Math::get_Input_Subset_parise0_valueB(CLIBAdder::Framework* obj)
 	{
-		return obj->dyn_REG_get_Input_Subset_parise0_valueB();
+		return obj->get_CLASS_Adder()->dyn_REG_get_Input_Subset_parise0_valueB(obj);
 	}
 		// set.
-	void CLIBAdder::LIB_Math::set_Input_Subset_parise0_valueA(CLIBAdder::Adder* obj, float newValue)
+	void CLIBAdder::LIB_Math::set_Input_Subset_parise0_valueA(CLIBAdder::Framework* obj, float newValue)
 	{
-		obj->dyn_REG_set_Input_Subset_parise0_valueA(newValue);
+		obj->get_CLASS_Adder()->dyn_REG_set_Input_Subset_parise0_valueA(obj, newValue);
 	}
-	void CLIBAdder::LIB_Math::set_Input_Subset_parise0_valueB(CLIBAdder::Adder* obj, float newValue)
+	void CLIBAdder::LIB_Math::set_Input_Subset_parise0_valueB(CLIBAdder::Framework* obj, float newValue)
 	{
-		obj->dyn_REG_set_Input_Subset_parise0_valueB(newValue);
+		obj->get_CLASS_Adder()->dyn_REG_set_Input_Subset_parise0_valueB(obj, newValue);
 	}
+
+
 // private.
 	// static.
 		// classes.
 			// create.
-	void CLIBAdder::LIB_Math::stat_CLASS_create_Adder()
-	{
-		CLIBAdder::Adder* _stat_CLASS_Adder = new CLIBAdder::Adder();
-		while (stat_CLASS_get_Adder() == NULL) {}
-	}
 			// get.
-	CLIBAdder::Adder* CLIBAdder::LIB_Math::stat_CLASS_get_Adder()
-	{
-		return _stat_CLASS_Adder;
-	}
 			// set.
 		// registers.
 			// create.
+	void CLIBAdder::LIB_Math::stat_CLASS_create_Framework()
+	{
+		CLIBAdder::Framework* _CLASS_framework = new class CLIBAdder::Framework();
+		while (stat_CLASS_get_Framework() == NULL) {}
+	}
 			// get.
+	CLIBAdder::Framework* CLIBAdder::LIB_Math::stat_CLASS_get_Framework()
+	{
+		return _CLASS_framework;
+	}
 			// set.

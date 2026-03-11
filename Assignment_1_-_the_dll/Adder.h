@@ -8,19 +8,23 @@ namespace CLIBAdder
 	public:
 	// constructor.
 		Adder();
-		// dynamic
-		double do_Add();
-			// crate.
-			// initialise.
-		void dyn_initialise_Input_Subset_parise0_valueA(float newINITIALISED_value);
-		void dyn_initialise_Input_Subset_parise0_valueB(float newINITIALISED_value);
-		void dyn_initialise_Output_Subset_parise0_value(double newINITIALISED_value);
-			// get.
-		float dyn_REG_get_Input_Subset_parise0_valueA();
-		float dyn_REG_get_Input_Subset_parise0_valueB();
+
+	// destructor.
+		~Adder();
+
+	// dynamic
+		double do_Add(class Framework* obj);
+		// crate.
+		// initialise.
+		void dyn_initialise_Input_Subset_parise0_valueA(class Framework* obj, float newINITIALISED_value);
+		void dyn_initialise_Input_Subset_parise0_valueB(class Framework* obj, float newINITIALISED_value);
+		void dyn_initialise_Output_Subset_parise0_value(class Framework* obj, double newINITIALISED_value);
+		// get.
+		float dyn_REG_get_Input_Subset_parise0_valueA(class Framework* obj);
+		float dyn_REG_get_Input_Subset_parise0_valueB(class Framework* obj);
 			// set.
-		void dyn_REG_set_Input_Subset_parise0_valueA(float newValue);
-		void dyn_REG_set_Input_Subset_parise0_valueB(float newValue);
+		void dyn_REG_set_Input_Subset_parise0_valueA(class Framework* obj, float newValue);
+		void dyn_REG_set_Input_Subset_parise0_valueB(class Framework* obj, float newValue);
 // private.
 	private:
 	// static.

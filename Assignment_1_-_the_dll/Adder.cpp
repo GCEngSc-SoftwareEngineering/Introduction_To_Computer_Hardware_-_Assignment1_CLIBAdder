@@ -16,43 +16,49 @@
 		stat_REG_create_ptr_Input_valueB();
 		stat_REG_create_ptr_Output_value();
 	}
+	CLIBAdder::Adder::~Adder()
+	{
+		delete _ptr_Input_valueA;
+		delete _ptr_Input_valueB;
+		delete _ptr_Output_value;
+	}
 		// dynamic
-	double CLIBAdder::Adder::do_Add()
+	double CLIBAdder::Adder::do_Add(CLIBAdder::Framework* obj)
 	{
-		double ans = (double)stat_REG_get_Input_Subset_parise0_valueA() + (double)stat_REG_get_Input_Subset_parise0_valueB();
-		stat_REG_set_Output_Subset_parise0_value(ans);
-		return stat_REG_get_Output_Subset_parise0_value();
+		double ans = (double)obj->get_CLASS_Adder()->stat_REG_get_Input_Subset_parise0_valueA() + (double)obj->get_CLASS_Adder()->stat_REG_get_Input_Subset_parise0_valueB();
+		obj->get_CLASS_Adder()->stat_REG_set_Output_Subset_parise0_value(ans);
+		return obj->get_CLASS_Adder()->stat_REG_get_Output_Subset_parise0_value();
 	}
-	void CLIBAdder::Adder::dyn_initialise_Input_Subset_parise0_valueA(float newINITIALISED_value)
+	void CLIBAdder::Adder::dyn_initialise_Input_Subset_parise0_valueA(CLIBAdder::Framework* obj, float newINITIALISED_value)
 	{
-		stat_REG_set_Input_Subset_parise0_valueA(newINITIALISED_value);
+		obj->get_CLASS_Adder()->stat_REG_set_Input_Subset_parise0_valueA(newINITIALISED_value);
 	}
-	void CLIBAdder::Adder::dyn_initialise_Input_Subset_parise0_valueB(float newINITIALISED_value)
+	void CLIBAdder::Adder::dyn_initialise_Input_Subset_parise0_valueB(CLIBAdder::Framework* obj, float newINITIALISED_value)
 	{
-		stat_REG_set_Input_Subset_parise0_valueB(newINITIALISED_value);
+		obj->get_CLASS_Adder()->stat_REG_set_Input_Subset_parise0_valueB(newINITIALISED_value);
 	}
-	void CLIBAdder::Adder::dyn_initialise_Output_Subset_parise0_value(double newINITIALISED_value)
+	void CLIBAdder::Adder::dyn_initialise_Output_Subset_parise0_value(CLIBAdder::Framework* obj, double newINITIALISED_value)
 	{
-		stat_REG_set_Output_Subset_parise0_value(newINITIALISED_value);
+		obj->get_CLASS_Adder()->stat_REG_set_Output_Subset_parise0_value(newINITIALISED_value);
 	}
 			// crate.
 			// get.
-	float CLIBAdder::Adder::dyn_REG_get_Input_Subset_parise0_valueA()
+	float CLIBAdder::Adder::dyn_REG_get_Input_Subset_parise0_valueA(CLIBAdder::Framework* obj)
 	{
-		return stat_REG_get_Input_Subset_parise0_valueB();
+		return obj->get_CLASS_Adder()->stat_REG_get_Input_Subset_parise0_valueB();
 	}
-	float CLIBAdder::Adder::dyn_REG_get_Input_Subset_parise0_valueB()
+	float CLIBAdder::Adder::dyn_REG_get_Input_Subset_parise0_valueB(CLIBAdder::Framework* obj)
 	{
-		return stat_REG_get_Input_Subset_parise0_valueB();
+		return obj->get_CLASS_Adder()->stat_REG_get_Input_Subset_parise0_valueB();
 	}
 			// set.
-	void CLIBAdder::Adder::dyn_REG_set_Input_Subset_parise0_valueA(float newValue)
+	void CLIBAdder::Adder::dyn_REG_set_Input_Subset_parise0_valueA(CLIBAdder::Framework* obj, float newValue)
 	{
-		stat_REG_set_Input_Subset_parise0_valueA(newValue);
+		obj->get_CLASS_Adder()->stat_REG_set_Input_Subset_parise0_valueA(newValue);
 	}
-	void CLIBAdder::Adder::dyn_REG_set_Input_Subset_parise0_valueB(float newValue)
+	void CLIBAdder::Adder::dyn_REG_set_Input_Subset_parise0_valueB(CLIBAdder::Framework* obj, float newValue)
 	{
-		stat_REG_set_Input_Subset_parise0_valueB(newValue);
+		obj->get_CLASS_Adder()->stat_REG_set_Input_Subset_parise0_valueB(newValue);
 	}
 // private.
 	// static.
