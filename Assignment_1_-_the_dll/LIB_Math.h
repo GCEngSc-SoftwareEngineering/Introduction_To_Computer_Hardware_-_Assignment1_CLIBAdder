@@ -19,11 +19,11 @@ namespace CLIBAdder
 		// crate.
 		static void* generate_Program();
 		// get.
-		static float reg_get_Input_Subset_parise0_valueA(class Adder* obj);
-		static float reg_get_Input_Subset_parise0_valueB(class Adder* obj);
+		static float get_Input_Subset_parise0_valueA(class Adder* obj);
+		static float get_Input_Subset_parise0_valueB(class Adder* obj);
 		// set.
-		static void reg_set_Input_Subset_parise0_valueA(class Adder* obj, float newValue);
-		static void reg_set_Input_Subset_parise0_valueB(class Adder* obj, float newValue);
+		static void set_Input_Subset_parise0_valueA(class Adder* obj, float newValue);
+		static void set_Input_Subset_parise0_valueB(class Adder* obj, float newValue);
 // private.
 	private:
 	// static.

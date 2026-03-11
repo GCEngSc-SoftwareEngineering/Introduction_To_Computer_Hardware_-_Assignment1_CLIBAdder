@@ -21,23 +21,23 @@
 	void* CLIBAdder::LIB_Math::generate_Program()
 	{
 		stat_CLASS_create_Adder();
-		return nullptr;
+		return stat_CLASS_get_Adder();
 	}
 		// get.
-	float CLIBAdder::LIB_Math::reg_get_Input_Subset_parise0_valueA(CLIBAdder::Adder* obj)
+	float CLIBAdder::LIB_Math::get_Input_Subset_parise0_valueA(CLIBAdder::Adder* obj)
 	{
 		return obj->dyn_REG_get_Input_Subset_parise0_valueA();
 	}
-	float CLIBAdder::LIB_Math::reg_get_Input_Subset_parise0_valueB(CLIBAdder::Adder* obj)
+	float CLIBAdder::LIB_Math::get_Input_Subset_parise0_valueB(CLIBAdder::Adder* obj)
 	{
 		return obj->dyn_REG_get_Input_Subset_parise0_valueB();
 	}
 		// set.
-	void CLIBAdder::LIB_Math::reg_set_Input_Subset_parise0_valueA(CLIBAdder::Adder* obj, float newValue)
+	void CLIBAdder::LIB_Math::set_Input_Subset_parise0_valueA(CLIBAdder::Adder* obj, float newValue)
 	{
 		obj->dyn_REG_set_Input_Subset_parise0_valueA(newValue);
 	}
-	void CLIBAdder::LIB_Math::reg_set_Input_Subset_parise0_valueB(CLIBAdder::Adder* obj, float newValue)
+	void CLIBAdder::LIB_Math::set_Input_Subset_parise0_valueB(CLIBAdder::Adder* obj, float newValue)
 	{
 		obj->dyn_REG_set_Input_Subset_parise0_valueB(newValue);
 	}
