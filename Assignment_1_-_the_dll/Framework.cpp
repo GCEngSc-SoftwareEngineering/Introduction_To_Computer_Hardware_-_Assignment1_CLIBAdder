@@ -4,12 +4,14 @@
 // pointerrs.
 	// classes.
 	CLIBAdder::Adder* _stat_CLASS_Adder = NULL;
+	CLIBAdder::Global* _stat_CLASS_Global = NULL;
 	// registers.
 
 // public.
 	// constructor.
 	CLIBAdder::Framework::Framework()
 	{
+		stat_CLASS_create_Global();
 		stat_CLASS_create_Adder();
 	}
 
@@ -33,7 +35,6 @@
 		return stat_CLASS_get_Adder();
 	}
 		// set.
-		// 
 // private.
 	// static.
 		// classes.
@@ -43,10 +44,19 @@
 		CLIBAdder::Adder* _stat_CLASS_Adder = new CLIBAdder::Adder();
 		while (stat_CLASS_get_Adder() == NULL) {}
 	}
+	void CLIBAdder::Framework::stat_CLASS_create_Global()
+	{
+		CLIBAdder::Global* _stat_CLASS_Global = new class CLIBAdder::Global();
+		while (stat_CLASS_get_Global() == NULL) {}
+	}
 			// get.
 	CLIBAdder::Adder* CLIBAdder::Framework::stat_CLASS_get_Adder()
 	{
 		return _stat_CLASS_Adder;
+	}
+	CLIBAdder::Global* CLIBAdder::Framework::stat_CLASS_get_Global()
+	{
+		return _stat_CLASS_Global;
 	}
 			// set.
 		// registers.

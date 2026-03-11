@@ -28,10 +28,10 @@ namespace CLIBAdder
 		// classes.
 			// create.
         static void stat_CLASS_create_Adder();
-
+        static void stat_CLASS_create_Global();
 		// get.
         static class Adder* stat_CLASS_get_Adder();
-
+        static class Global* stat_CLASS_get_Global();
 		// set.
 	// registers.
 		// create.
