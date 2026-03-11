@@ -9,5 +9,7 @@
 
 // add headers that you want to pre-compile here
 #include "framework.h"
+#include "LIB_Math.h"
+#include "Adder.h"
 
 #endif //PCH_H
