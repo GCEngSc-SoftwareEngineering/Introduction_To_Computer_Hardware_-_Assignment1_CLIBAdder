@@ -14,26 +14,26 @@ extern "C" {
 	{
 		class LIBADDER_API LIB_Math
 		{
-			// public.
+// public.
 		public:
-			// constructor.
+	// constructor.
 			LIB_Math();
-			// dynamic
-			static double do_Add(class Framework* obj);
-			// crate.
+	// dynamic
+			static double do_Add(void* obj);
+		// crate.
 			static void* generate_Program();
-			// get.
+		// get.
 			static class Adder* get_CLASS_Adder();
-			static float get_Input_Subset_parise0_valueA(class Framework* obj);
-			static float get_Input_Subset_parise0_valueB(class Framework* obj);
-			// set.
-			static void set_Input_Subset_parise0_valueA(class Framework* obj, float newValue);
-			static void set_Input_Subset_parise0_valueB(class Framework* obj, float newValue);
-			// private.
+			static float get_Input_Subset_parise0_valueA(void* obj);
+			static float get_Input_Subset_parise0_valueB(void* obj);
+		// set.
+			static void set_Input_Subset_parise0_valueA(void* obj, float newValue);
+			static void set_Input_Subset_parise0_valueB(void* obj, float newValue);
+// private.
 		private:
-			// static.
-				// classes.
-					// create.
+	// static.
+		// classes.
+			// create.
 			static void stat_CLASS_create_Framework();
 			// get.
 			static class Framework* stat_CLASS_get_Framework();

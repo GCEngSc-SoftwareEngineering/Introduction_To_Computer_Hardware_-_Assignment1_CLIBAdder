@@ -13,7 +13,7 @@ namespace CLIBAdder
         virtual ~Framework();
 
     // dynamic.
-        void initialise(class Framework* obj);
+        void initialise(void* obj);
         // create.    
         // get.
         // set.

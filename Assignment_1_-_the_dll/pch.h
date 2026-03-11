@@ -11,5 +11,6 @@
 #include "framework.h"
 #include "LIB_Math.h"
 #include "Adder.h"
+#include "Global.h"
 
 #endif //PCH_H

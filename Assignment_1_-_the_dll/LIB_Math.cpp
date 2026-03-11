@@ -12,9 +12,9 @@
 	{
 	}
 	// dynamic
-	double CLIBAdder::LIB_Math::do_Add(CLIBAdder::Framework* obj)
+	double CLIBAdder::LIB_Math::do_Add(void* obj)
 	{
-		return obj->get_CLASS_Adder()->do_Add(obj);
+		return CLIBAdder::Global::obj_getClassOf(obj)->get_CLASS_Adder()->do_Add(CLIBAdder::Global::obj_getClassOf(obj));
 	}
 		// crate.
 	void* CLIBAdder::LIB_Math::generate_Program()
@@ -24,22 +24,22 @@
 		return (void*)stat_CLASS_get_Framework();
 	}
 	// get.
-	float CLIBAdder::LIB_Math::get_Input_Subset_parise0_valueA(CLIBAdder::Framework* obj)
+	float CLIBAdder::LIB_Math::get_Input_Subset_parise0_valueA(void* obj)
 	{
-		return obj->get_CLASS_Adder()->dyn_REG_get_Input_Subset_parise0_valueA(obj);
+		return CLIBAdder::Global::obj_getClassOf(obj)->get_CLASS_Adder()->dyn_REG_get_Input_Subset_parise0_valueA(CLIBAdder::Global::obj_getClassOf(obj));
 	}
-	float CLIBAdder::LIB_Math::get_Input_Subset_parise0_valueB(CLIBAdder::Framework* obj)
+	float CLIBAdder::LIB_Math::get_Input_Subset_parise0_valueB(void* obj)
 	{
-		return obj->get_CLASS_Adder()->dyn_REG_get_Input_Subset_parise0_valueB(obj);
+		return CLIBAdder::Global::obj_getClassOf(obj)->get_CLASS_Adder()->dyn_REG_get_Input_Subset_parise0_valueB(CLIBAdder::Global::obj_getClassOf(obj));
 	}
 		// set.
-	void CLIBAdder::LIB_Math::set_Input_Subset_parise0_valueA(CLIBAdder::Framework* obj, float newValue)
+	void CLIBAdder::LIB_Math::set_Input_Subset_parise0_valueA(void* obj, float newValue)
 	{
-		obj->get_CLASS_Adder()->dyn_REG_set_Input_Subset_parise0_valueA(obj, newValue);
+		CLIBAdder::Global::obj_getClassOf(obj)->get_CLASS_Adder()->dyn_REG_set_Input_Subset_parise0_valueA(CLIBAdder::Global::obj_getClassOf(obj), newValue);
 	}
-	void CLIBAdder::LIB_Math::set_Input_Subset_parise0_valueB(CLIBAdder::Framework* obj, float newValue)
+	void CLIBAdder::LIB_Math::set_Input_Subset_parise0_valueB(void* obj, float newValue)
 	{
-		obj->get_CLASS_Adder()->dyn_REG_set_Input_Subset_parise0_valueB(obj, newValue);
+		CLIBAdder::Global::obj_getClassOf(obj)->get_CLASS_Adder()->dyn_REG_set_Input_Subset_parise0_valueB(CLIBAdder::Global::obj_getClassOf(obj), newValue);
 	}
 
 

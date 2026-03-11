@@ -18,11 +18,11 @@
 		delete _stat_CLASS_Adder;
 	}
 
-	void CLIBAdder::Framework::initialise(CLIBAdder::Framework* obj)
+	void CLIBAdder::Framework::initialise(void* obj)
 	{
-		obj->get_CLASS_Adder()->dyn_initialise_Input_Subset_parise0_valueA(obj, (float)0.0);
-		obj->get_CLASS_Adder()->dyn_initialise_Input_Subset_parise0_valueB(obj, (float)0.0);
-		obj->get_CLASS_Adder()->dyn_initialise_Output_Subset_parise0_value(obj, (double)0.0);
+		CLIBAdder::Global::obj_getClassOf(obj)->get_CLASS_Adder()->dyn_initialise_Input_Subset_parise0_valueA(obj, (float)0.0);
+		CLIBAdder::Global::obj_getClassOf(obj)->get_CLASS_Adder()->dyn_initialise_Input_Subset_parise0_valueB(obj, (float)0.0);
+		CLIBAdder::Global::obj_getClassOf(obj)->get_CLASS_Adder()->dyn_initialise_Output_Subset_parise0_value(obj, (double)0.0);
 	}
 
 	// dynamic
