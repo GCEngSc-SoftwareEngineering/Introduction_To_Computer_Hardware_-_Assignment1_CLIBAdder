@@ -11,6 +11,10 @@ namespace CLIBAdder
 		// dynamic
 		double do_Add();
 			// crate.
+			// initialise.
+		void dyn_initialise_Input_Subset_parise0_valueA(float newINITIALISED_value);
+		void dyn_initialise_Input_Subset_parise0_valueB(float newINITIALISED_value);
+		void dyn_initialise_Output_Subset_parise0_value(double newINITIALISED_value);
 			// get.
 		float dyn_REG_get_Input_Subset_parise0_valueA();
 		float dyn_REG_get_Input_Subset_parise0_valueB();

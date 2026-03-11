@@ -23,6 +23,18 @@
 		stat_REG_set_Output_Subset_parise0_value(ans);
 		return stat_REG_get_Output_Subset_parise0_value();
 	}
+	void CLIBAdder::Adder::dyn_initialise_Input_Subset_parise0_valueA(float newINITIALISED_value)
+	{
+		stat_REG_set_Input_Subset_parise0_valueA(newINITIALISED_value);
+	}
+	void CLIBAdder::Adder::dyn_initialise_Input_Subset_parise0_valueB(float newINITIALISED_value)
+	{
+		stat_REG_set_Input_Subset_parise0_valueB(newINITIALISED_value);
+	}
+	void CLIBAdder::Adder::dyn_initialise_Output_Subset_parise0_value(double newINITIALISED_value)
+	{
+		stat_REG_set_Output_Subset_parise0_value(newINITIALISED_value);
+	}
 			// crate.
 			// get.
 	float CLIBAdder::Adder::dyn_REG_get_Input_Subset_parise0_valueA()

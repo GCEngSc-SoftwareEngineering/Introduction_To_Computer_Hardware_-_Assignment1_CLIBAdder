@@ -21,6 +21,9 @@
 	void* CLIBAdder::LIB_Math::generate_Program()
 	{
 		stat_CLASS_create_Adder();
+		stat_CLASS_get_Adder()->dyn_initialise_Input_Subset_parise0_valueA((float)0.0);
+		stat_CLASS_get_Adder()->dyn_initialise_Input_Subset_parise0_valueB((float)0.0);
+		stat_CLASS_get_Adder()->dyn_initialise_Output_Subset_parise0_value((double)0.0);
 		return (void*)stat_CLASS_get_Adder();
 	}
 		// get.
@@ -47,7 +50,7 @@
 			// create.
 	void CLIBAdder::LIB_Math::stat_CLASS_create_Adder()
 	{
-		Adder* _stat_CLASS_Adder = new Adder();
+		CLIBAdder::Adder* _stat_CLASS_Adder = new CLIBAdder::Adder();
 		while (stat_CLASS_get_Adder() == NULL) {}
 	}
 			// get.
