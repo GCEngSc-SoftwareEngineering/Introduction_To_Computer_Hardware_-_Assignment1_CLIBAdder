@@ -1,4 +1,4 @@
-# Introduction_To_Computer_Hardware.
+# Introduction To Computer Hardware.
 
 ## ToDo:
 - JNI value mangling between java and c++.
