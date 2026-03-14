@@ -2,7 +2,7 @@
 
 namespace CLIBAdder
 {
-    public class Global
+    class Global
     {
 // public.
     public:
