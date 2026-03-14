@@ -5,11 +5,9 @@
 #else
 #define LIBADDER_API __declspec(dllimport)
 #endif
-
-#ifdef __cplusplus
-extern "C" {
-#endif
-
+#include <string>
+extern "C" 
+{
 	namespace CLIBAdder
 	{
 		class LIBADDER_API LIB_Math
@@ -24,11 +22,11 @@ extern "C" {
 			static void* generate_Program();
 		// get.
 			static class Adder* get_CLASS_Adder();
-			static float get_Input_Subset_praise0_valueA(void* obj);
-			static float get_Input_Subset_praise0_valueB(void* obj);
+			static unsigned char* get_Input_Subset_praise0_valueA(void* obj);
+			static unsigned char* get_Input_Subset_praise0_valueB(void* obj);
 		// set.
-			static void set_Input_Subset_praise0_valueA(void* obj, float newValue);
-			static void set_Input_Subset_praise0_valueB(void* obj, float newValue);
+			static void set_Input_Subset_praise0_valueA(void* obj, unsigned char* newMangledValue);
+			static void set_Input_Subset_praise0_valueB(void* obj, unsigned char* newMAngledValue);
 // private.
 		private:
 	// static.
@@ -44,7 +42,4 @@ extern "C" {
 			// set.
 		};
 	}
-
-#ifdef __cplusplus
 }
-#endif
