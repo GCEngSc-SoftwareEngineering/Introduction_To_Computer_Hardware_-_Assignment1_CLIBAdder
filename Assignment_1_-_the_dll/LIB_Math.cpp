@@ -22,6 +22,10 @@
 		stat_CLASS_get_Framework()->initialise(stat_CLASS_get_Framework());
 		return (void*)stat_CLASS_get_Framework();
 	}
+	void initialise(void* obj)
+	{
+		CLIBAdder::Global::stat_obj_getClassOf(obj)->initialise(obj);
+	}
 		// get.
 	unsigned char* CLIBAdder::LIB_Math::get_Input_Subset_praise0_valueA(void* obj)
 	{

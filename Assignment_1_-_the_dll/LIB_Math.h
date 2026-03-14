@@ -20,6 +20,7 @@ extern "C"
 			static double do_Add(void* obj);
 		// crate.
 			static void* generate_Program();
+			static void initialise(void* obj);
 		// get.
 			static class Adder* get_CLASS_Adder();
 			static unsigned char* get_Input_Subset_praise0_valueA(void* obj);
