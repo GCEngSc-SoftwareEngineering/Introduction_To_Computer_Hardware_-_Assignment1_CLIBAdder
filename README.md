@@ -35,9 +35,19 @@ Build id: 20251204-0850
 
  #### edit pom.xml.
 ````
+<dependencies>
+    <!-- JNA Core Dependency -->
     <dependency>
-    	<groupId>net.java.dev.jna</groupId>
-    	<artifactId>jna</artifactId>
-    	<version>5.18.1</version> <!-- Check for newest 2026 version -->
+        <groupId>net.java.dev.jna</groupId>
+        <artifactId>jna</artifactId>
+        <version>5.18.1</version> <!-- Use the latest version from Maven Central -->
     </dependency>
+
+    <!-- Optional: JNA Platform Dependency (for common OS functions) -->
+    <dependency>
+        <groupId>net.java.dev.jna</groupId>
+        <artifactId>jna-platform</artifactId>
+        <version>5.18.1</version> <!-- Check for newest 2026 version -->
+    </dependency>
+</dependencies>
 ````
