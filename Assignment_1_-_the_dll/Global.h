@@ -17,7 +17,9 @@ namespace CLIBAdder
         // get.
         // set.
     // static.
+        static double stat_ByteArray_to_Double(unsigned char* java_bytes);
         static float stat_ByteArray_to_Float(unsigned char* java_bytes);
+        static unsigned char* stat_Double_to_ByteArray(double doubleValue);
         static unsigned char* stat_Float_to_ByteArray(float floatValue);
         static class Framework* stat_obj_getClassOf(void* obj);
         // create.

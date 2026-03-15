@@ -13,18 +13,17 @@ namespace CLIBAdder
 		~Adder();
 
 	// dynamic
-		double do_Add(void* obj);
+		void do_Add(class Framework* obj);
 		// crate.
 		// initialise.
-		void dyn_initialise_Input_Subset_praise0_valueA(void* obj, float newINITIALISED_value);
-		void dyn_initialise_Input_Subset_praise0_valueB(void* obj, float newINITIALISED_value);
-		void dyn_initialise_Output_Subset_praise0_value(void* obj, double newINITIALISED_value);
+		void dyn_initialise_Input_Subset_praise0_valueA(class Framework* obj, float newINITIALISED_value);
+		void dyn_initialise_Input_Subset_praise0_valueB(class Framework* obj, float newINITIALISED_value);
+		void dyn_initialise_Output_Subset_praise0_value(class Framework* obj, double newINITIALISED_value);
 		// get.
-		float dyn_REG_get_Input_Subset_praise0_valueA(void* obj);
-		float dyn_REG_get_Input_Subset_praise0_valueB(void* obj);
+		float dyn_REG_get_Output_Subset_praise0_value(class Framework* obj);
 			// set.
-		void dyn_REG_set_Input_Subset_praise0_valueA(void* obj, float newValue);
-		void dyn_REG_set_Input_Subset_praise0_valueB(void* obj, float newValue);
+		void dyn_REG_set_Input_Subset_praise0_valueA(class Framework* obj, float newValue);
+		void dyn_REG_set_Input_Subset_praise0_valueB(class Framework* obj, float newValue);
 // private.
 	private:
 	// static.

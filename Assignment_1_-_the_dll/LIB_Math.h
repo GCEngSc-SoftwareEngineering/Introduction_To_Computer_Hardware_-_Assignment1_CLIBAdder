@@ -17,17 +17,15 @@ extern "C"
 	// constructor.
 			LIB_Math();
 	// dynamic
-			static double do_Add(void* obj);
+			static void do_Add(void* obj);
 		// crate.
 			static void* generate_Program();
 			static void initialise(void* obj);
 		// get.
-			static class Adder* get_CLASS_Adder();
-			static unsigned char* get_Input_Subset_praise0_valueA(void* obj);
-			static unsigned char* get_Input_Subset_praise0_valueB(void* obj);
+			static unsigned char* get_Output_Subset_praise0_value(void* obj);
 		// set.
-			static void set_Input_Subset_praise0_valueA(void* obj, unsigned char* newMangledValue);
-			static void set_Input_Subset_praise0_valueB(void* obj, unsigned char* newMAngledValue);
+			static void set_Input_Subset_praise0_valueA(void* obj, unsigned char* bytes);
+			static void set_Input_Subset_praise0_valueB(void* obj, unsigned char* bytes);
 // private.
 		private:
 	// static.

@@ -11,9 +11,9 @@
 	// constructor.
 
 	// dynamic
-	double CLIBAdder::LIB_Math::do_Add(void* obj)
+	void CLIBAdder::LIB_Math::do_Add(void* obj)
 	{
-		return CLIBAdder::Global::stat_obj_getClassOf(obj)->get_CLASS_Adder()->do_Add(CLIBAdder::Global::stat_obj_getClassOf(obj));
+		CLIBAdder::Global::stat_obj_getClassOf(obj)->get_CLASS_Adder()->do_Add(CLIBAdder::Global::stat_obj_getClassOf(obj));		
 	}
 		// crate.
 	void* CLIBAdder::LIB_Math::generate_Program()
@@ -26,25 +26,20 @@
 	{
 		CLIBAdder::Global::stat_obj_getClassOf(obj)->initialise(obj);
 	}
-		// get.
-	unsigned char* CLIBAdder::LIB_Math::get_Input_Subset_praise0_valueA(void* obj)
+
+	// get.
+	unsigned char* CLIBAdder::LIB_Math::get_Output_Subset_praise0_value(void* obj)
 	{
-		return CLIBAdder::Global::stat_Float_to_ByteArray(CLIBAdder::Global::stat_obj_getClassOf(obj)->get_CLASS_Adder()->dyn_REG_get_Input_Subset_praise0_valueA(CLIBAdder::Global::stat_obj_getClassOf(obj)));
-	}
-	unsigned char* CLIBAdder::LIB_Math::get_Input_Subset_praise0_valueB(void* obj)
-	{
-		return CLIBAdder::Global::stat_Float_to_ByteArray(CLIBAdder::Global::stat_obj_getClassOf(obj)->get_CLASS_Adder()->dyn_REG_get_Input_Subset_praise0_valueB(CLIBAdder::Global::stat_obj_getClassOf(obj)));
+		return CLIBAdder::Global::stat_Double_to_ByteArray(CLIBAdder::Global::stat_obj_getClassOf(obj)->get_CLASS_Adder()->dyn_REG_get_Output_Subset_praise0_value(CLIBAdder::Global::stat_obj_getClassOf(obj)));
 	}
 		// set.
-	void CLIBAdder::LIB_Math::set_Input_Subset_praise0_valueA(void* obj, unsigned char* newMangledValue)
+	void CLIBAdder::LIB_Math::set_Input_Subset_praise0_valueA(void* obj, unsigned char* bytes)
 	{
-		float newfloat = Global::stat_ByteArray_to_Float(newMangledValue);
-		CLIBAdder::Global::stat_obj_getClassOf(obj)->get_CLASS_Adder()->dyn_REG_set_Input_Subset_praise0_valueA(CLIBAdder::Global::stat_obj_getClassOf(obj), newfloat);
+		CLIBAdder::Global::stat_obj_getClassOf(obj)->get_CLASS_Adder()->dyn_REG_set_Input_Subset_praise0_valueA(CLIBAdder::Global::stat_obj_getClassOf(obj), CLIBAdder::Global::stat_ByteArray_to_Float(bytes));
 	}
-	void CLIBAdder::LIB_Math::set_Input_Subset_praise0_valueB(void* obj, unsigned char* newMangledValue)
+	void CLIBAdder::LIB_Math::set_Input_Subset_praise0_valueB(void* obj, unsigned char* bytes)
 	{
-		float newfloat = Global::stat_ByteArray_to_Float(newMangledValue);
-		CLIBAdder::Global::stat_obj_getClassOf(obj)->get_CLASS_Adder()->dyn_REG_set_Input_Subset_praise0_valueB(CLIBAdder::Global::stat_obj_getClassOf(obj), newfloat);
+		CLIBAdder::Global::stat_obj_getClassOf(obj)->get_CLASS_Adder()->dyn_REG_set_Input_Subset_praise0_valueB(CLIBAdder::Global::stat_obj_getClassOf(obj), CLIBAdder::Global::stat_ByteArray_to_Float(bytes));
 	}
 
 
@@ -58,7 +53,7 @@
 			// create.
 	void CLIBAdder::LIB_Math::stat_CLASS_create_Framework()
 	{
-		CLIBAdder::Framework* _CLASS_framework = new class CLIBAdder::Framework();
+		_CLASS_framework = new class CLIBAdder::Framework();
 		while (stat_CLASS_get_Framework() == NULL) {}
 	}
 			// get.
